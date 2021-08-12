@@ -67,7 +67,7 @@ curl localhost:8080
 
 
 
-        if     [[" x$?" == "x0" ]];
+        if     [[" x$?" == "0" ]];
 then    echo good;
 else exit 1;
 fi'''

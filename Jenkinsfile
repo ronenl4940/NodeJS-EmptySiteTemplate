@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('build & compile') {
+      steps {
+        sh 'npm instal'
+      }
+    }
+
   }
 }

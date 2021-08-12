@@ -18,7 +18,10 @@ pipeline {
         sh '''node server.js &
 
 
-sleep 5 && curl localhost:8081
+
+
+
+           sleep 5 && curl localhost:8081
 
 
 

@@ -19,7 +19,7 @@ pipeline {
 
 
 curl localhost:8080
-
+sleep 5 &&
 
 
 

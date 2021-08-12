@@ -73,5 +73,14 @@ fi'''
       }
     }
 
+    stage('package code') {
+      steps {
+        sh '''tar -czvf node.tar.gz .
+
+
+  '''
+      }
+    }
+
   }
 }

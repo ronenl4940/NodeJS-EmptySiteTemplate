@@ -4,7 +4,6 @@ pipeline {
     stage('checkout code') {
       steps {
         git 'https://github.com/ronenl4940/NodeJS-EmptySiteTemplate.git'
-        cleanWs(cleanWhenSuccess: true)
       }
     }
 
@@ -26,8 +25,7 @@ pipeline {
 
 
         
-sleep 5 
-curl localhost:8080
+sleep 5  $$ curl localhost:8080
  
 
 
@@ -68,8 +66,7 @@ curl localhost:8080
 
 
         if     [[" x$?" == "0" ]];
-then    echo good;
-else exit 1;
+then   echo good;else exit 1;
 fi'''
       }
     }

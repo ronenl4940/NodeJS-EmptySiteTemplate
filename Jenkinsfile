@@ -15,7 +15,10 @@ pipeline {
 
     stage('test code') {
       steps {
-        sh 'node server.js'
+        sh '''node server.js &
+
+
+curl localhost:8080'''
       }
     }
 

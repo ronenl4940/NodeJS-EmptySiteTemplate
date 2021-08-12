@@ -25,7 +25,7 @@ pipeline {
 
 
         
-sleep 5  curl localhost:8080
+5  curl localhost:8080
  
 
 

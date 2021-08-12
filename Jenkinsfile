@@ -15,58 +15,8 @@ pipeline {
 
     stage('test code') {
       steps {
-        sh '''node server.js &
-
-
-
-
-
-
-
-
-          curl localhost:8080
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        if     [[ "x$?" == "x0" ]];
-then   echo good;else exit 1;
-fi'''
+        sh '''chmod 777 test.sh
+./test.sh'''
       }
     }
 

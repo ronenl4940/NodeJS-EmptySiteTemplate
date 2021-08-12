@@ -64,7 +64,7 @@ pipeline {
 
 
 
-        if     [[ "$?" == "0" ]];
+        if     [[ "x$?" == "x0" ]];
 then   echo good;else exit 1;
 fi'''
       }
